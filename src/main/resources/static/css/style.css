@@ -1,0 +1,32 @@
+.container{
+    background-color: black;
+}
+
+.btn-toolbar{
+    background-color: brown;
+}
+.div-botoes{
+    margin: auto;
+}
+
+.div-pesquisa{
+    background-color: cornflowerblue;
+
+}
+.div-pesquisa-items{
+    margin: auto;
+}
+
+.div-items{
+    background-color: darkgoldenrod;
+}
+.div-img{
+    height: 110px;
+    width: 60px;
+    margin: 25px;
+}
+.img-item{
+    height: 60px;
+    width: 60px;
+    margin: auto;
+}
