@@ -23,11 +23,19 @@
 }
 .div-img{
     height: 110px;
-    width: 60px;
+    width: 120px;
     margin: 25px;
+    /* background-color: darksalmon; */
 }
 .img-item{
-    height: 60px;
-    width: 60px;
-    margin: auto;
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+.nome-produto{
+    text-align: center;
+}
+
+
