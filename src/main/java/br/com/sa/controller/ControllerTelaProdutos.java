@@ -6,8 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ControllerTelaProdutos {
     
-    @GetMapping("/")
+    @GetMapping("/telaProdutos")
     public String getTelaProdutos(){
         return "telaProdutos";
+    }
+
+    @GetMapping("/finalizarCompra")
+    public String getTelaFinalizarCompra(){
+        return "finalizarCompra";
     }
 }
