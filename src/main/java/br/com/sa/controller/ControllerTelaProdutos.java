@@ -38,13 +38,18 @@ public class ControllerTelaProdutos {
     @PostMapping("/usuario/save")
     public String saveUsuario(Usuario usuario){
 
-        usuario.setSenha(new BCryptPasswordEncoder().encode(usuario.getSenha())); 
+        if (usuarioRepository.findByLogin(usuario.getLogin()) == null){
 
-        usuarioRepository.save(usuario);
+            usuario.setSenha(new BCryptPasswordEncoder().encode(usuario.getSenha())); 
 
+            usuarioRepository.save(usuario);
+
+        } else {
+            System.out.println("Usuário já existente!");
+        }
 
         
-        return "login";
+        return "redirect:/login";
     }
 
     @GetMapping("/")

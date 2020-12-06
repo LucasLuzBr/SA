@@ -53,6 +53,11 @@
               </div>
 
             </div>
+            <form th:action="@{/login}" class="navbar-form" method="POST">
+              <button class="btn btn-dark" type="submit">
+                <i class="fas fa-sign-out-alt"></i> Sair
+              </button>
+            </form>
           </div>
 
           <div class="container div-pesquisa">
@@ -61,8 +66,10 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </div>
+              <button th:onclick="window.location.href='/finalizarCompra'" class="btn btn-success">Finalizar Compra</button>
             </form>
           </div>
+          
 
         <div class="container div-itens">
           <div class="row">

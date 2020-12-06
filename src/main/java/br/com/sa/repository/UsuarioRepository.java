@@ -7,4 +7,5 @@ import br.com.sa.model.Usuario;
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     
     public Usuario findByLogin(String login);
+
 }

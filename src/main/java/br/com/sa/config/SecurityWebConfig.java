@@ -19,7 +19,8 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter{
     protected void configure(HttpSecurity http)throws Exception{
         http
             .authorizeRequests()
-            .antMatchers("/").permitAll()
+            .antMatchers("/").hasRole("padrao")
+            .antMatchers("/finalizarCompra").hasRole("padrao")
 
             .antMatchers("/bootstrap-4.5.2/**").permitAll()
             .antMatchers("/css/**").permitAll()
